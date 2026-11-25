@@ -3,6 +3,8 @@
 
 #include "lvgl.h"
 
+
+
 #define SCREEN_REGISTER(name, scr, fn_name) { name, &scr, scr_##fn_name##_prepare, scr_##fn_name##_init, scr_##fn_name##_uninit, scr_##fn_name##_step }
 
 /**
@@ -10,9 +12,8 @@
  * in the order you want them registered. Keep SCREEN_MAX last.
  */
 typedef enum {
-    SCREEN_MAIN = 0,
-    /* SCREEN_SETTINGS, */
-    /* SCREEN_ERROR,    */
+    SCREEN_SPLASH = 0,
+    SCREEN_HOME,
     SCREEN_MAX
 } ui_screens_t;
 

@@ -7,7 +7,7 @@
 #include "esp_lcd_panel_ops.h"
 
 /* Board display rotation: 0, 90, 180, or 270 */
-#define BSP_DISPLAY_ROTATION      (90)
+#define BSP_DISPLAY_ROTATION      (0)
 
 /* Native panel resolution (portrait) */
 #define BSP_LCD_NATIVE_H_RES      (240)
